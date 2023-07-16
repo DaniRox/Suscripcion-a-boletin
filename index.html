@@ -2,38 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./sass/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <!-- Sign-up form start -->
+  <main>
+    <section class="sec-img">
+      <img class="img" src="./assets/images/illustration-sign-up-mobile.svg"></img>
+    </section>
+    
+    <section class="sec-texts">
+      <div class="texts">
+        <h1 class="text__title">Stay updated!</h1>
+        <span class="text__subtitle">Join 60,000+ product managers receiving monthly updates on:</span>
+        <ul class="text__list">
+          <li class="text__item"><img src="./assets/images/icon-list.svg" class="item__icon">Product discovery and building what matters</li>
+          <li class="text__item"><img src="./assets/images/icon-list.svg" class="item__icon">Measuring to ensure updates are a success</li>
+          <li class="text__item"><img src="./assets/images/icon-list.svg" class="item__icon">And much more!</li>
+        </ul>
+      </div>
+      <form>
+        <label for="email">Email address</label>
+        <input name="email" id="email" type="email" autocomplete="on" value="email@company.com" required>
+        <input type="submit" value="Subscribe to monthly newsletter" id="btn-form">
+      </form>
+    </section>
+  </main>
 
-  Stay updated!
 
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
+  <!-- Success message start
 
   Thanks for subscribing!
 
@@ -42,11 +47,14 @@
 
   Dismiss message
 
-  <!-- Success message end -->
+  Success message end -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      <span class="footer__txt"> by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__link"> Frontend Mentor</a>. </span>
+      <span class="footer__txt"> by <a href="https://www.linkedin.com/in/danirox/" class="footer__link" target="_blank"><img src="./assets/images/logo-DaniRox.svg" class="footer__icon"></a></span>
+    </div>
+  </footer>
+
 </body>
 </html>
