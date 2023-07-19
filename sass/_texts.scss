@@ -9,6 +9,11 @@
         margin: 2rem 0;
         font-size: 2.5rem;
         font-weight: 700;
+
+        @include media-queries.desktop {
+            font-size: 3.3rem;
+            margin: 0.7rem 0 2rem;
+        }
     }
 
     .text__subtitle {
@@ -19,7 +24,7 @@
 
     .text__list {
         color: globals.$dark-slate-grey;
-        margin: 2rem 0;
+        margin: 1.8rem 0 2.6rem;
 
         .text__item {
             font-size: 1rem;

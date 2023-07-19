@@ -2,6 +2,20 @@
 @use "globals";
 
 
-.img {
+.img-movil {
     width: 100%;
+    display: flex;
+
+    @include media-queries.desktop {
+        display: none;
+    }
+}
+
+.img-desktop {
+    display: none;
+
+    @include media-queries.desktop {
+        width: 100%;
+        display: flex;
+    }
 }

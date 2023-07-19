@@ -10,6 +10,33 @@ $white: hsl(0, 0%, 100%);
 
 html {
     background-color: $white;
+    font-size: 16px;
+
+    @include media-queries.desktop-s {
+        font-size: 20px;
+    }
+
+    @include media-queries.desktop {
+        font-size: 22px;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    @include media-queries.desktop {
+        flex-direction: row-reverse;
+    }
+}
+
+.sec-img {
+    margin: 0;
+
+    @include media-queries.desktop {
+        margin: 2rem;
+        width: 50%;
+    }
 }
 
 .sec-texts {
@@ -17,4 +44,15 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include media-queries.desktop {
+        width: 50%;
+        margin: 2rem;
+    }
+}
+
+footer {
+    height: 6rem;
+    display: flex;
+    align-items: flex-end;
 }
