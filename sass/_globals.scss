@@ -26,7 +26,9 @@ main {
     flex-direction: column;
     
     @include media-queries.desktop {
+        height: 90vh;
         flex-direction: row-reverse;
+        justify-content: center;
     }
 }
 
@@ -35,7 +37,6 @@ main {
 
     @include media-queries.desktop {
         margin: 2rem;
-        width: 50%;
     }
 }
 
@@ -44,6 +45,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include media-queries.desktop-s {
+        margin: 2.5rem;
+    }
 
     @include media-queries.desktop {
         width: 50%;
@@ -55,4 +60,8 @@ footer {
     height: 6rem;
     display: flex;
     align-items: flex-end;
+
+    @include media-queries.desktop {
+        height: 3rem;
+    }
 }
