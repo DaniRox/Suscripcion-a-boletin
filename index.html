@@ -29,10 +29,14 @@
           <li class="text__item"><img src="./assets/images/icon-list.svg" class="item__icon">And much more!</li>
         </ul>
       </div>
-      <form>
+      <form action="" method="POST">
         <label for="email">Email address</label>
         <input name="email" id="email" type="email" autocomplete="on" placeholder="email@company.com" required>
         <input type="submit" value="Subscribe to monthly newsletter" id="btn-form">
+      
+        <input type="hidden" name="_next" value="./html/ok-msg.html">
+        <input type="hidden" name="_captcha" value="false">
+
       </form>
     </section>
   </main>
@@ -43,6 +47,8 @@
       <span class="footer__txt"> by <a href="https://www.linkedin.com/in/danirox/" class="footer__link" target="_blank"><img src="./assets/images/logo-DaniRox.svg" class="footer__icon"></a></span>
     </div>
   </footer>
+
+  <script src="./btn-success.js"></script>
 
 </body>
 </html>
