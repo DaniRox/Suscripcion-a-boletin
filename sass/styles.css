@@ -139,16 +139,23 @@ form input {
   padding: 0;
 }
 form #email {
-  color: hsl(231, 7%, 60%);
+  color: hsl(234, 29%, 20%);
   border: 1px solid hsl(231, 7%, 60%);
   padding-left: 1.5rem;
   width: calc(100% - 1.6rem);
+}
+form #email:focus-visible {
+  border: 1px solid hsl(234, 29%, 20%);
 }
 form #btn-form {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   background-color: hsl(234, 29%, 20%);
   border: 1px solid hsl(234, 29%, 20%);
+}
+form #btn-form:active {
+  background-image: linear-gradient(to right, #FF527B, hsl(4, 100%, 67%));
+  border: none;
 }
 
 .attribution {

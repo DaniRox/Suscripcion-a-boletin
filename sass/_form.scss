@@ -22,10 +22,14 @@ form {
     }
 
     #email {
-        color: globals.$grey;
+        color: globals.$dark-slate-grey;
         border: 1px solid globals.$grey;
         padding-left: 1.5rem;
         width: calc(100% - 1.6rem);
+
+        &:focus-visible {
+            border: 1px solid globals.$dark-slate-grey;
+        }
     }
 
     #btn-form {
@@ -33,5 +37,10 @@ form {
         font-weight: 700;
         background-color: globals.$dark-slate-grey;
         border: 1px solid globals.$dark-slate-grey;
+
+        &:active {
+            background-image: linear-gradient(to right, globals.$dark-tomato , globals.$tomato);
+            border: none;
+        }
     }
 }
