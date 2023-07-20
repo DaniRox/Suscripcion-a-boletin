@@ -25,9 +25,6 @@ $dark-tomato: #FF527B;
     padding: 0;
     cursor: pointer;
 
-    @include media-queries.desktop-s {
-        height: 4rem;
-    }
 }
 
 @mixin btn {
