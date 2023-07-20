@@ -7,7 +7,7 @@ btnCard.addEventListener("click", desabilitarBtn);
 
 function desabilitarBtn() {
     if(emailClient.value === "") {
-        btnForm.style = "disabled";
+        btnCard.style = "disabled";
     } else {
         email.innerHTML = emailClient.value;
     }
