@@ -1,7 +1,8 @@
-const btnForm = document.getElementById("form-btn");
+const btnCard = document.getElementById("btn-form");
+const formEmail = document.getElementById("email");
 
 
-btnForm.addEventListener("click", desabilitarBtn)
+btnCard.addEventListener("click", desabilitarBtn);
 
 function desabilitarBtn() {
     if(formEmail.value === "") {
