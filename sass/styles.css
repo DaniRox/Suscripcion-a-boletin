@@ -87,6 +87,7 @@ footer {
   .img-desktop {
     width: 100%;
     display: flex;
+    max-height: 5550px;
   }
 }
 
