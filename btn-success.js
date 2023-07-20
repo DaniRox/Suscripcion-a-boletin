@@ -1,11 +1,14 @@
 const btnCard = document.getElementById("btn-form");
-const formEmail = document.getElementById("email");
+const emailClient = document.getElementById("email");
+const email = document.getElementsByClassName("card-email");
 
 
 btnCard.addEventListener("click", desabilitarBtn);
 
 function desabilitarBtn() {
-    if(formEmail.value === "") {
+    if(emailClient.value === "") {
         btnForm.style = "disabled";
+    } else {
+        email.innerHTML = emailClient.value;
     }
 }
