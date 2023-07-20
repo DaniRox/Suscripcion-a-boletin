@@ -1,43 +1,37 @@
 @use "media-queries";
 @use "globals";
 
-.texts {
-    font-family: globals.$roboto;
+.text__title {
+    @include globals.txts();
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
 
-    .text__title {
-        color: globals.$dark-slate-grey;
-        margin: 2rem 0;
-        font-size: 2.5rem;
-        font-weight: 700;
-
-        @include media-queries.desktop {
-            font-size: 3.7rem;
-            margin: 0.7rem 0 2rem;
-        }
+    @include media-queries.desktop {
+        font-size: 3.7rem;
+        margin: 0.7rem 0 2rem;
     }
+}
 
-    .text__subtitle {
-        color: globals.$dark-slate-grey;
-        font-size: 1rem;
-        line-height: 22px;
-    }
+.text__subtitle {
+    @include globals.txts();
+}
 
-    .text__list {
-        color: globals.$dark-slate-grey;
-        margin: 1.8rem 0 2.6rem;
+.text__list {
+    color: globals.$dark-slate-grey;
+    margin: 1.8rem 0 2.6rem;
 
         .text__item {
-            font-size: 1rem;
-            margin: 1rem 0;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            line-height: 22px;
+        @include globals.txts();
 
-            .item__icon {
-                width: 1.2rem;
-                margin-right: 0.7rem;
-            }
+        margin: 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .item__icon {
+            width: 1.2rem;
+            margin-right: 0.7rem;
         }
     }
 }

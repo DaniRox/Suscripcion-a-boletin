@@ -24,6 +24,13 @@ main {
   }
 }
 
+.main-card {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .sec-img {
   margin: 0;
 }
@@ -83,39 +90,44 @@ footer {
   }
 }
 
-.texts {
-  font-family: "Roboto", sans-serif;
-}
-.texts .text__title {
+.text__title {
   color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 22px;
   margin: 2rem 0;
   font-size: 2.5rem;
   font-weight: 700;
 }
 @media screen and (min-width: 1100px) {
-  .texts .text__title {
+  .text__title {
     font-size: 3.7rem;
     margin: 0.7rem 0 2rem;
   }
 }
-.texts .text__subtitle {
+
+.text__subtitle {
   color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   line-height: 22px;
 }
-.texts .text__list {
+
+.text__list {
   color: hsl(234, 29%, 20%);
   margin: 1.8rem 0 2.6rem;
 }
-.texts .text__list .text__item {
+.text__list .text__item {
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
+  line-height: 22px;
   margin: 1rem 0;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  line-height: 22px;
 }
-.texts .text__list .text__item .item__icon {
+.text__list .text__item .item__icon {
   width: 1.2rem;
   margin-right: 0.7rem;
 }
@@ -160,11 +172,88 @@ form #btn-form {
   border: 1px solid hsl(234, 29%, 20%);
 }
 form #btn-form:hover {
-  box-shadow: 0px 26px 40px 5px rgba(255, 98, 87, 0.4);
+  box-shadow: 0px 17px 40px 2px rgba(255, 98, 87, 0.4);
 }
 form #btn-form:active {
   background-image: linear-gradient(to right, #FF527B, hsl(4, 100%, 67%));
   border: none;
+}
+
+.card-ok-msg {
+  padding: 2.2rem;
+}
+@media screen and (min-width: 770px) {
+  .card-ok-msg {
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1.8rem;
+    box-shadow: 0px 0px 101px -26px rgba(36, 39, 66, 0.82);
+  }
+}
+.card-ok-msg .card-item__icon {
+  width: 3rem;
+}
+.card-ok-msg .card-text__title {
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 22px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 770px) {
+  .card-ok-msg .card-text__title {
+    line-height: 44px;
+  }
+}
+.card-ok-msg .card-txt {
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  line-height: 22px;
+  margin: 1rem 0;
+}
+.card-ok-msg .card-txt .card-email {
+  font-weight: 700;
+}
+@media screen and (min-width: 770px) {
+  .card-ok-msg .card-txt {
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
+.card-ok-msg #btn-card {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  margin: 0.7rem 0;
+  padding: 0;
+  cursor: pointer;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+  border: 1px solid hsl(234, 29%, 20%);
+  height: 2.8rem;
+}
+@media screen and (min-width: 770px) {
+  .card-ok-msg #btn-card {
+    height: 4rem;
+  }
+}
+.card-ok-msg #btn-card:hover {
+  box-shadow: 0px 17px 40px 2px rgba(255, 98, 87, 0.4);
+}
+.card-ok-msg #btn-card:active {
+  background-image: linear-gradient(to right, #FF527B, hsl(4, 100%, 67%));
+  border: none;
+}
+@media screen and (min-width: 770px) {
+  .card-ok-msg #btn-card {
+    height: 3rem;
+  }
 }
 
 .attribution {

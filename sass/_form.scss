@@ -13,17 +13,7 @@ form {
     }
 
     input {
-        width: 100%;
-        height: 3rem;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        margin: 0.7rem 0;
-        padding: 0;
-        cursor: pointer;
-
-        @include media-queries.desktop-s {
-            height: 4rem;
-        }
+        @include globals.input();
     }
 
     #email {
@@ -38,18 +28,6 @@ form {
     }
 
     #btn-form {
-        color: globals.$white;
-        font-weight: 700;
-        background-color: globals.$dark-slate-grey;
-        border: 1px solid globals.$dark-slate-grey;
-
-        &:hover {
-            box-shadow: 0px 26px 40px 5px rgba(255,98,87,0.4);
-        }
-
-        &:active {
-            background-image: linear-gradient(to right, globals.$dark-tomato , globals.$tomato);
-            border: none;
-        }
+        @include globals.btn();
     }
 }

@@ -1,0 +1,53 @@
+@use "media-queries";
+@use "globals";
+
+.card-ok-msg {
+    padding: 2.2rem;
+
+    @include media-queries.desktop-s {
+        width: 22rem;
+        height: 22rem;
+        border-radius: 1.8rem;
+        box-shadow: 0px 0px 101px -26px rgba(36,39,66,0.82);
+    }
+
+    .card-item__icon {
+        width: 3rem;
+    }
+
+    .card-text__title {
+        @include globals.txts();
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 38px;
+        margin: 2rem 0;
+
+        @include media-queries.desktop-s {
+            line-height: 44px;
+        }
+    }
+
+    .card-txt {
+        @include globals.txts();
+        margin: 1rem 0;
+
+        .card-email {
+            font-weight: 700;
+        }
+
+        @include media-queries.desktop-s {
+            font-size: 1rem;
+            line-height: 30px;
+        }
+    }
+
+    #btn-card {
+        @include globals.input();
+        @include globals.btn();
+        height: 2.8rem;
+
+        @include media-queries.desktop-s {
+            height: 3rem;
+        }
+    }
+}

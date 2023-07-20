@@ -6,23 +6,27 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./sass/styles.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../sass/styles.css">
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
         <title>Frontend Mentor | Newsletter sign-up form with success message</title>
     </head>
 <body>
 
-    <main>
-        <div class="ok-msg">
-            
+    <main class="main-card">
+        <div class="card-ok-msg">
+            <img src="../assets/images/icon-list.svg" class="card-item__icon">
+            <h1 class="card-text__title">Thanks for subscribing!</h1>
+            <p class="card-txt">A confirmation email has been sent to <span class="card-email">ash@loremcompany.com</span>. 
+                Please open it and click the button inside to confirm your subscription.</p>
+            <input type="submit" value="Dismiss message" id="btn-card">
         </div>
     </main>
     
     <footer>
         <div class="attribution">
             <span class="footer__txt"> by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="footer__link"> Frontend Mentor</a>. </span>
-            <span class="footer__txt"> by <a href="https://www.linkedin.com/in/danirox/" class="footer__link" target="_blank"><img src="./assets/images/logo-DaniRox.svg" class="footer__icon"></a></span>
+            <span class="footer__txt"> by <a href="https://www.linkedin.com/in/danirox/" class="footer__link" target="_blank"><img src="../assets/images/logo-DaniRox.svg" class="footer__icon"></a></span>
         </div>
     </footer>
 
