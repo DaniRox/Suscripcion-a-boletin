@@ -3,12 +3,4 @@ const emailClient = document.getElementById("email");
 const email = document.getElementsByClassName("card-email");
 
 
-btnCard.addEventListener("click", desabilitarBtn);
 
-function desabilitarBtn() {
-    if(emailClient.value === "") {
-        btnCard.style = "disabled";
-    } else {
-        email.innerHTML = emailClient.value;
-    }
-}
