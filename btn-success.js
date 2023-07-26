@@ -1,6 +1,10 @@
-const btnCard = document.getElementById("btn-form");
-const emailClient = document.getElementById("email");
-const email = document.getElementsByClassName("card-email");
 
+function captureEmail(){
+    let emailForm = document.getElementById("email").value;
+    sessionStorage.setItem("emailForm", emailForm);
+}
 
-
+function displayEmail(){
+    let email = sessionStorage.getItem("emailForm");
+    document.getElementById("span-email").innerHTML = email;
+}

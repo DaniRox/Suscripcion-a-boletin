@@ -11,15 +11,15 @@
         <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
         <title>Frontend Mentor | Newsletter sign-up form with success message</title>
     </head>
-<body>
+<body onload="displayEmail()">
 
     <main class="main-card">
         <div class="card-ok-msg">
             <img src="../assets/images/icon-list.svg" class="card-item__icon">
             <h1 class="card-text__title">Thanks for subscribing!</h1>
-            <p class="card-txt">A confirmation email has been sent to <span class="card-email">ash@loremcompany.com</span>. 
+            <p class="card-txt" id="card-txt">A confirmation email has been sent to <span class="card-email" id="span-email"></span>. 
                 Please open it and click the button inside to confirm your subscription.</p>
-            <input type="submit" value="Dismiss message" id="btn-card">
+            <input type="submit" value="Dismiss message" id="btn-card" onclick="location.href='https://danirox.github.io/Newsletter-sign-up/'">
         </div>
     </main>
     

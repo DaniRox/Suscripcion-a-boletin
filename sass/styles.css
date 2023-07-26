@@ -216,7 +216,7 @@ form #btn-form:active {
 @media screen and (min-width: 770px) {
   .card-ok-msg .card-txt {
     font-size: 0.8rem;
-    line-height: 30px;
+    line-height: 22px;
   }
 }
 .card-ok-msg #btn-card {
