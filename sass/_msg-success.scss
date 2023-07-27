@@ -2,9 +2,11 @@
 @use "globals";
 
 .card-ok-msg {
+    background-color: transparent;
     padding: 2.2rem;
 
-    @include media-queries.desktop-s {
+    @include media-queries.desktop {
+        background-color: globals.$white;
         width: 18rem;
         height: 18rem;
         border-radius: 1.8rem;

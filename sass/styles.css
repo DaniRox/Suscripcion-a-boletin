@@ -187,10 +187,12 @@ form #btn-form:active {
 }
 
 .card-ok-msg {
+  background-color: transparent;
   padding: 2.2rem;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1100px) {
   .card-ok-msg {
+    background-color: hsl(0, 0%, 100%);
     width: 18rem;
     height: 18rem;
     border-radius: 1.8rem;
