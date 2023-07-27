@@ -4,21 +4,33 @@ html {
 }
 @media screen and (min-width: 770px) {
   html {
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 1100px) {
-  html {
-    margin: 0 5%;
+    font-size: 18px;
   }
 }
 
-main {
+body {
+  background-color: transparent;
+}
+@media screen and (min-width: 1100px) {
+  body {
+    height: 100vh;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.card {
   display: flex;
   flex-direction: column;
 }
 @media screen and (min-width: 1100px) {
-  main {
+  .card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.2rem;
+    width: 50rem;
+    margin-top: 3rem;
     flex-direction: row-reverse;
     justify-content: center;
   }
@@ -175,10 +187,12 @@ form #btn-form:active {
 }
 
 .card-ok-msg {
+  background-color: transparent;
   padding: 2.2rem;
 }
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 1100px) {
   .card-ok-msg {
+    background-color: hsl(0, 0%, 100%);
     width: 18rem;
     height: 18rem;
     border-radius: 1.8rem;
@@ -243,7 +257,6 @@ form #btn-form:active {
 
 .attribution {
   width: 100%;
-  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,13 +279,14 @@ form #btn-form:active {
   font-weight: 700;
   margin: 0 0.3rem;
 }
-.attribution .footer__txt .footer__link .footer__icon {
-  width: 5rem;
-  margin-left: 0.5rem;
+@media screen and (min-width: 1100px) {
+  .attribution .footer__txt .footer__link {
+    color: hsl(0, 0%, 100%);
+  }
 }
 @media screen and (min-width: 1100px) {
-  .attribution .footer__txt .footer__link .footer__icon {
-    width: 8rem;
+  .attribution .footer__txt {
+    color: hsl(0, 0%, 100%);
   }
 }
 @media screen and (min-width: 770px) {
@@ -283,6 +297,7 @@ form #btn-form:active {
 @media screen and (min-width: 1100px) {
   .attribution {
     position: relative;
+    color: hsl(0, 0%, 100%);
   }
 }
 
