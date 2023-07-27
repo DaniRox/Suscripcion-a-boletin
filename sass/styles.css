@@ -263,7 +263,7 @@ form #btn-form:active {
   position: relative;
 }
 .attribution .footer__txt {
-  color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
   font-family: "Roboto", sans-serif;
   font-size: 0.7rem;
   font-weight: 300;
@@ -272,20 +272,11 @@ form #btn-form:active {
   align-items: center;
 }
 .attribution .footer__txt .footer__link {
-  color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: 700;
   margin: 0 0.3rem;
-}
-.attribution .footer__txt .footer__link .footer__icon {
-  width: 5rem;
-  margin-left: 0.5rem;
-}
-@media screen and (min-width: 1100px) {
-  .attribution .footer__txt .footer__link .footer__icon {
-    width: 8rem;
-  }
 }
 @media screen and (min-width: 770px) {
   .attribution {

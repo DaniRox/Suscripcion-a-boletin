@@ -11,7 +11,7 @@
     position: relative;
     
     .footer__txt {
-        color: globals.$dark-slate-grey;
+        color: globals.$white;
         font-family: globals.$roboto;
         font-size: 0.7rem;
         font-weight: 300;
@@ -20,20 +20,11 @@
         align-items: center;
 
         .footer__link {
-            color: globals.$dark-slate-grey;
+            color: globals.$white;
             font-size: 1.1rem;
             text-decoration: none;
             font-weight: 700;
             margin: 0 0.3rem;
-
-            .footer__icon {
-                width: 5rem;
-                margin-left: 0.5rem;
-
-                @include media-queries.desktop {
-                    width: 8rem;
-                }
-            }
         }
     }
 
