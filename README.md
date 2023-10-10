@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/formulario-de-registro-html-sass-javascript-NEMYABVRHy)
-- Live Site URL: [Add live site URL here](https://danirox.github.io/Newsletter-sign-up/)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/formulario-de-registro-html-sass-javascript-NEMYABVRHy)
+- Live Site URL: [live site URL here](https://danirox.github.io/Newsletter-sign-up/)
 
 ## My process
 
