@@ -30,7 +30,7 @@ body {
     background-color: hsl(0, 0%, 100%);
     border-radius: 1.2rem;
     width: 50rem;
-    margin-top: 3rem;
+    margin-top: 6rem;
     flex-direction: row-reverse;
     justify-content: center;
   }
